@@ -44,15 +44,15 @@ def nb_sup_for (L,e) :
 
 def moy_sup(L,e) : 
     somme = 0
-    for index in range(len(L)):
-        somme += (L[index] if  L[index] > e else 0)
+    for item in L:
+        somme += (item if item > e else 0)
     return somme / nb_sup_for(L,e)
 
 
 def val_max(L):
     max_ = 0 
     for item in L :
-        max_ = item if item > max_ else max_
+        (max_ := item  if item > max_ else max_)
     return max_
 
 def ind_max(L):
@@ -65,5 +65,5 @@ def ind_max(L):
 
 
 
-print(ind_max(list_int))
+print(val_max(list_int))
 
