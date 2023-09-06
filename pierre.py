@@ -27,7 +27,6 @@ elif cpo == 'N':
     print("Bienvenu ",joueur1, " nous allons jouer ensemble")
     joueur2 = questions(3)
     print("Bienvenu ",joueur2, " nous allons jouer ensemble \n")
-
 np = 0
 c = True
 joueur2_result = 0
