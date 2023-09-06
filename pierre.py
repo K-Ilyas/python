@@ -11,11 +11,11 @@ def questions(code) :
         case 4 :
            return input("faîtes votre choix parmi (pierre, papier, ciseaux): ")
 
-cpo = questions(1)
-while cpo != 'O' and cpo != 'N':
+cpo = questions(1).upper()
+while  cpo != 'O' and cpo != 'N':
     # if cpo != 'N' : // 
     print("Je n'ai pas compris votre réponse")
-    cpo = questions(1)
+    cpo = questions(1).upper()
 
 if cpo == 'O':
     joueur1 = questions(2)
@@ -86,7 +86,7 @@ while c == True:
     else :
        c = True
        #On propose de c ou de s'arrêter 
-       go = input("Souhaitez vous refaire une partie {} contre {} ? (O/N) ".format(joueur1,joueur2))
+       go = input("Souhaitez vous refaire une partie {} contre {} ? (O/N) ".format(joueur1,joueur2)).upper()
        if go == 'O':
             c = True
        elif go == 'N':
