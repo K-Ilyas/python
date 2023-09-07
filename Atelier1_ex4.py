@@ -1,7 +1,6 @@
 import datetime
 from Atelier1_ex2 import annee_bissextile
 
-print(user_questions(1))
 
 # funtion date_est_valide(jour,mois,annee)  
 MONTH_DAYS = {
@@ -30,3 +29,13 @@ def saisie_date_naissance():
         break
 
     return datetime.datetime(annee,mois,jour)
+
+def age(date_naissance):
+    return (datetime.datetime.now() - date_naissance).days / 365
+
+def est_majeur(date_naissance):
+    return datetime.datetime.now() > date_naissance
+
+
+
+print(age(datetime.datetime(1999,12,18)))
