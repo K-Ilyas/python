@@ -65,18 +65,15 @@ while c == True:
     #On regarde qui a gagné cette manche on calcule les points et on affiche le résultat
     if joueur1_choice == joueur2_choice :
         winner = "aucun de vous, vous être ex æquo"
-        joueur1_result = joueur1_result + 0
-        joueur2_result = joueur2_result + 0
         
     elif (joueur1_choice == 'pierre' and joueur2_choice == 'papier') or (joueur1_choice == 'papier' and joueur2_choice == 'ciseaux') or (joueur1_choice == 'ciseaux' and joueur2_choice == 'pierre') or (joueur1_choice == 'puit' and joueur2_choice == 'papier' ) or (joueur2_choice == 'puit' and joueur1_choice != 'papier' ) :
         winner = joueur2
-        joueur1_result = joueur1_result + 0
+
         joueur2_result = joueur2_result + 1
 
-    elif (joueur1_choice == 'pierre' and joueur2_choice == 'ciseaux' ) or  ( joueur1_choice == 'papier' and joueur2_choice == 'pierre') or (joueur1_choice == 'ciseaux' and joueur2_choice == 'papier' ) or (joueur1_choice == 'puit' and joueur2_choice != 'papier') or (joueur2_choice == 'puit' and joueur1_choice == 'papier'):
+    else :
         winner = joueur1
         joueur1_result = joueur1_result + 1
-        joueur2_result = joueur2_result + 0
 
     print("le gagnant est",winner)
     print("Les scores à l'issue de cette manche sont donc",joueur1, joueur1_result, "et", joueur2, joueur2_result, "\n")
