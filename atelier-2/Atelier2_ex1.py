@@ -1,6 +1,6 @@
 # boucle 
 
-list_int = list((1,99,1,1,1,-2,3))
+list_int = list((1,1,1,1,-2,3))
 
 def somme_range(list_in):
  sum = 0
@@ -52,7 +52,7 @@ def moy_sup(L,e) :
 def val_max(L):
     max_ = 0 
     for item in L :
-        (max_ := item  if item > max_ else max_)
+        (max_ := item  if item > max_ else max_ )
     return max_
 
 def ind_max(L):

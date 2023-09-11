@@ -57,7 +57,6 @@ def position_tri(lst,e) :
 
 
 def a_repetitions(lst):
-    
     for index in range(len(lst)):
         if lst[index] in lst[0:index]+lst[index+1:] :
             return True
