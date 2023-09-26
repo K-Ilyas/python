@@ -20,4 +20,4 @@ def separer_recursive(L):
         return result
 
 
-print(separer([1, -1, 0, 2, 0, 4, 0, -10]))
+print(separer_recursive([1, -1, 0, 2, 0, 4, 0, -10]))

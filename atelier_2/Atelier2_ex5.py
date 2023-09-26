@@ -10,7 +10,6 @@ import time
 #     return vitrine
 
 
-
 def vitrine_recursive(nbEmplacements: int, lObjets: list,turn:int = 0):
     if len(lObjets) == 0:
         return [[], []]
@@ -42,9 +41,10 @@ def vitrine2(nbEmplacements: int, lObjets: list):
                 vitrine[turn].insert(0, item) 
             else :
                 change = (0 if turn == 1 else 1)
-                vitrine[change].insert(0, item) if test(vitrine[change],item)  else None
+                vitrine[change].insert(0, item) if test(vitrine[change],item) else None
             turn = (0 if turn == 1 else 1)
     return vitrine
+
 
 print(vitrine2(6, [1, 1, 1, 3, 4, 5, 5,8,1,8,9]))
 print(vitrine_recursive(6, [1, 1, 1, 3, 4, 5, 5,8,1,8,9]))

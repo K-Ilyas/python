@@ -25,7 +25,6 @@ def nb_occurrences(lst,e):
     return occurrence
 
 def est_triee(lst):
-    
     for index in range(len(lst)-1):
         if lst[index+1] < lst[index]:
           return False
